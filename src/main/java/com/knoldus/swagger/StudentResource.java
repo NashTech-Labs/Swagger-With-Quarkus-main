@@ -1,4 +1,4 @@
-package org.knoldus.swagger;
+package com.knoldus.swagger;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -10,10 +10,10 @@ import java.util.Set;
 @Consumes(MediaType.APPLICATION_JSON)
 public class StudentResource {
 
-    private Set<Student> students = new HashSet<>();
+    private final Set<Student> students = new HashSet<>();
 
     public StudentResource() {
-        students.add(new Student("Deepak", "MCA"));
+        students.add(new Student("Anshuman", "MCA"));
         students.add(new Student("Shashi", "B.TECH"));
     }
     /**

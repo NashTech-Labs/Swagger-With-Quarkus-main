@@ -1,4 +1,4 @@
-package org.knoldus.swagger;
+package com.knoldus.swagger;
 
 public class Student {
 
